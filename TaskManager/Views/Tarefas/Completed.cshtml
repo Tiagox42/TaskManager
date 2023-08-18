@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TaskManager.Models.Tarefa>
+
+
+<p id="botaoCriar">
+    <a class="btn btn-warning" asp-action="Create">CRIAR NOVA TAREFA</a>
+</p>
+
+
+@foreach (var item in Model)
+{
+
+    <div id="rowCard">
+        <div class="">
+            <div class="card">
+                <div class="card-body" style="background-color: #f05151">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h5>
+                    <h6 class="card-subtitle text-muted">Data Vencimento: @Html.DisplayFor(modelItem => item.DateOff)</h6>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                    <div class="canto">
+                        <a asp-action="Edit" asp-route-id="@item.Id"><span class="zoom glyphicon glyphicon-pencil btn" aria-hidden="true"></span></a>
+                        <a asp-action="Details" asp-route-id="@item.Id"><span class="zoom glyphicon glyphicon-info-sign btn" aria-hidden="true"></span></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id"><span class="zoom glyphicon glyphicon-trash btn" aria-hidden="true"></span></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

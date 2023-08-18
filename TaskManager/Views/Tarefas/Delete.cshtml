@@ -1,0 +1,50 @@
+﻿@model TaskManager.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Deletar Tarefa</h2>
+
+<h3>Tem certeza de que deseja excluir?</h3>
+<div>
+    <hr />
+    <dl id="dtDetalhes" class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOff)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOff)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Complet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Complet)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <a class="btn btn-warning" asp-action="Index">Back to List</a>
+        <input class="btn btn-danger" type="submit" value="Delete" class="btn btn-default" />
+    </form>
+</div>

@@ -1,0 +1,130 @@
+﻿#websiteTitle {
+    font-size: 50px;
+    font-family: 'Calibri';
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+body {
+    min-height: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li
+
+{
+    float: none;
+    display: inline-block;
+}
+
+}
+
+
+li a {
+    color: black;
+    font-size: 15px;
+}
+
+li a:hover {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.zoom {
+    transition: transform .2s; 
+  }
+  
+  .zoom:hover {
+    transform: scale(2.00); 
+  }
+
+.glyphicon {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.glyphicon:hover {
+    color: rgb(0, 0, 0);
+}
+
+.card-subtitle {
+color: black;
+}
+
+.card-title{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 18px;
+    color: black;
+    height: 9rem;
+}
+
+.card-body {
+    background-color: #e6e6e6;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 22rem;
+    width: 55rem;
+    width: 55rem;
+}
+
+.card {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 55rem;
+    width: 55rem;
+    height: 22rem;
+    transition: transform .2s;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+#rowCard {
+    display: inline-flex;
+}
+
+.card:hover{
+    transition: transform .2s; 
+    transform: scale(1.25);
+    position: relative;
+    z-index:5;
+  }
+
+#botaoCriar {
+    text-align: center;
+}
+
+#botoesTarefa {
+    justify-content: flex-end;
+}
+
+container-fluid, footer, footer span {
+    text-align: center;
+}
+
+.glyphicon-ok:hover {
+    color: rgb(24, 156, 24);
+}
+
+.canto {
+    text-align: center;
+}
+
+#dtDetalhes {
+    font-size: 15px;
+}
+
+#footerEspace {
+    height: 150px;
+}
