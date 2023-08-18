@@ -19,7 +19,7 @@ Requisitos:
 
 Ao abrir o projeto executar os dois seguintes comandos no Console do Gerenciador de Pacotes do Visual Studio:
 
-Add-Migration Initial
-Update-Database
+- Add-Migration Initial
+- Update-Database
 
 ***Os comandos devem ser executados separadamente.***
